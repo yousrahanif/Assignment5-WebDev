@@ -62,23 +62,43 @@
       <section class="mt-4 p-10 flex flex-col justify-center">
         <div class="collapse collapse-arrow bg-base-200 mb-4">
             <input type="radio" name="my-accordion-2" checked="checked" />
-            <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+            <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
             <div class="collapse-content">
-              <p>hello</p>
+              <p>The DOM is a structured model of a webpage that allows JavaScript to modify its content, style, and structure instantly.</p>
             </div>
           </div>
           <div class="collapse collapse-arrow bg-base-200 mb-4">
             <input type="radio" name="my-accordion-2" />
-            <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+            <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
             <div class="collapse-content">
-              <p>hello</p>
+              <p>
+                There are 5 ways we can do that.
+               <ol>
+                <li>
+                    1. document.getElementById()
+               
+                </li>
+                <li>2. document.getElementsByClassName()</li>
+                <li>3. document.getElementsByTagName()</li>
+                <li>4. document.querySelector()</li>
+                <li>5. document.querySelectorAll()</li>
+               </ol>
+                
+              </p>
             </div>
           </div>
-          <div class="collapse collapse-arrow bg-base-200">
+          <div class="collapse collapse-arrow bg-base-200 mb-4">
             <input type="radio" name="my-accordion-2" />
-            <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+            <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it useful?</div>
             <div class="collapse-content">
-              <p>hello</p>
+              <p>Event delegation is a method where we can add one event listener to the parent instead of adding event listeners to each child. It is a useful technique because it improves performance and leads to simpler code.</p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow bg-base-200 mb-4">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
+            <div class="collapse-content">
+              <p>To manipulate attributes, we can use methods like getAttribute, setAttribute, and removeAttribute. For styles, we can change a style or retrieve it using getComputedStyle. For example, to change the background color of an element, we can use document.getElementById('idName').style.backgroundColor = 'blue'</p>
             </div>
           </div>
           <script src="js/implement.js"></script>
