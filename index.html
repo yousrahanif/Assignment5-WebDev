@@ -31,18 +31,21 @@
     <div class="navbar bg-[#F9F7F3] w-full sticky top-0 z-50">
         <div class="navbar-start">
             <div class="dropdown">
-                <button class="btn btn-ghost bg-blue-300">Blog</button>
+              <button id="blog" class=" bg-green-300  border border-solid p-2 rounded-lg">Blog</button>
+              <button id="home" class="hidden bg-green-300  border border-solid p-2 rounded-lg">Home</button>
+
+                <!-- <button class="btn btn-ghost bg-green-300 ">Blog</button> -->
             </div>
         </div>
         <div class="navbar-center">
           <a class="btn btn-ghost text-xl flex items-center space-x-2 ">
-            <i class="fa-solid fa-hand-holding-dollar text-blue-300"></i>Donate Bangladesh</a>
+            <i class="fa-solid fa-hand-holding-dollar text-green-300"></i>Donate Bangladesh</a>
         </div>
         <div class="navbar-end flex items-center space-x-4 mr-">
         
             <div class="indicator flex items-center">
              
-             <h2  > <i class="fa-solid fa-comment-dollar fa-lg text-blue-400 "></i> <span id="total">5500</span></h2>
+             <h2  > <i class="fa-solid fa-comment-dollar fa-lg text-green-300 "></i> <span id="total">5500.00</span></h2>
                
 
              
@@ -50,77 +53,107 @@
       
         </div>
       </div>
-      <section class="flex justify-center mt-4 ">
-        <button id="btn-donation" class=" bg-blue-300  mx-4 border border-solid p-4">Donation</button>
-        <button id="btn-history" class=" bg-gray-100 border border-solid p-4 ">History</button>
 
+
+
+
+      <section id="body">
+
+        <section class="flex justify-center mt-4 ">
+          <button id="btn-donation" class=" bg-green-300  mx-4 border border-solid p-4 rounded-lg">Donation</button>
+          <button id="btn-history" class=" bg-gray-100 border border-solid p-4 rounded-lg ">History</button>
+  
+          
+  
+        </section>
+       <section id="container">
+  
+        <section class="p-10 border border-solid mt-4">
+          <div class="flex flex-col md:flex-row justify-center items-center ">
+            <div class="mx-2 mt-4">
+              <img src="assets/noakhali.png" alt="">
+  
+            </div>
+            <div class="card bg-base-100 w-96 mt-4 md:mt-0 md:ml-4  ">
+              
+              <div class="card-body text-center lg:text-left">
+                  <p class="text-green-500"> <i class="fa-solid fa-dollar-sign text-green-300 "></i> <span id="noaHave" class="bg-green-300 p-2 rounded-lg">0.00</span></p>
+                <h2 class="card-title" id="noaTitle">Donate for Flood at Noakhali, BD</h2>
+                <p>The floods in Noakhali have caused significant damage. Your donation will make a huge difference. </p>
+                <input id="noaGet" type="text" placeholder="Donation Amount" class="input input-bordered w-full max-w-xs" />
+                <div class="card-actions justify-center">
+                  <button id="btn-noa" class="btn bg-green-300 w-full ">Donate Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+        </section>
+     
+        <section class="p-10 border border-solid mt-4">
+          <div class="flex flex-col md:flex-row justify-center items-center ">
+            <div class="mx-2 mt-4">
+              <img src="assets/feni.png" alt="">
+  
+            </div>
+            <div class="card bg-base-100 w-96 mt-4 md:mt-0 md:ml-4 ">
+              
+              <div class="card-body text-center lg:text-left">
+                <p class="text-green-500"> <i class="fa-solid fa-dollar-sign text-green-300 "></i> <span id="feniHave" class="bg-green-300 p-2 rounded-lg">0.00</span></p>
+                <h2 class="card-title" id="feniTitle">Donate for Flood at Feni, BD</h2>
+                <p>The recent floods in Feni have devastated. Your donation will make a huge difference. </p>
+                <input id="feniGet" type="text" placeholder="Donation Amount" class="input input-bordered w-full max-w-xs" />
+                <div class="card-actions justify-center">
+                  <button id="btn-feni" class="btn bg-green-300 w-full ">Donate Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+        </section>
+        <section class="p-10 border border-solid mt-4 flex justify-center">
+          <div class="flex flex-col md:flex-row justify-center items-center ">
+            <div class="mx-2 mt-4">
+              <img src="assets/quota-protest.png" alt="">
+  
+            </div>
+            <div class="card bg-base-100 w-96 mt-4 md:mt-0 md:ml-4 ">
+              
+              <div class="card-body text-center lg:text-left">
+                <p class="text-green-500"> <i class="fa-solid fa-dollar-sign text-green-300 "></i> <span id="quotaHave" class="bg-green-300 p-2 rounded-lg">0.00</span></p>
+                <h2 class="card-title" id="quotaTitle">Donate for Injures, BD</h2>
+                <p>TThe recent Quota movement has resulted in numerous injuries. Your donation will make a huge difference. </p>
+                <input type="text" id="quotaGet" placeholder="Donation Amount" class="input input-bordered w-full max-w-xs" />
+                <div class="card-actions justify-center">
+                  <button id="btn-quota" class="btn bg-green-300 w-full ">Donate Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+        </section>
+  
+       
+  
+       
+        
+       </section>
+       <section id="history-container" class="hidden flex flex-col justify-center mt-10">
+       
+  
+       </section>
+
+
+
+
+
+      </section>
+
+      <section id="homeBody" class="hidden">
         
 
       </section>
-      <section class="p-10">
-        <div class="flex flex-col md:flex-row justify-center items-center ">
-          <div class="mx-2 mt-4">
-            <img src="assets/noakhali.png" alt="">
-
-          </div>
-          <div class="card bg-base-100 w-96 mt-4 md:mt-0 md:ml-4 ">
-            
-            <div class="card-body text-center">
-                <p class="text-blue-500"><span id="noaHave" class="bg-blue-200 p-2"><i class="fa-solid fa-dollar-sign text-blue-400 "></i> 3500</span></p>
-              <h2 class="card-title">Donate for Flood at Noakhali, BD</h2>
-              <p>The floods in Noakhali have caused significant damage. Your donation will make a huge difference. </p>
-              <input id="noaGet" type="text" placeholder="Donation Amount" class="input input-bordered w-full max-w-xs" />
-              <div class="card-actions justify-center">
-                <button id="btn-noa" class="btn bg-blue-300 w-full ">Donate Now</button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </section>
-   
-      <section class="p-10">
-        <div class="flex flex-col md:flex-row justify-center items-center ">
-          <div class="mx-2 mt-4">
-            <img src="assets/feni.png" alt="">
-
-          </div>
-          <div class="card bg-base-100 w-96 mt-4 md:mt-0 md:ml-4 ">
-            
-            <div class="card-body text-center">
-                <p class="text-blue-500"><span class="bg-blue-200 p-2"><i class="fa-solid fa-dollar-sign text-blue-400 "></i> 5500</span></p>
-              <h2 class="card-title">Donate for Flood at Feni, BD</h2>
-              <p>The recent floods in Feni have devastated. Your donation will make a huge difference. </p>
-              <input type="text" placeholder="Donation Amount" class="input input-bordered w-full max-w-xs" />
-              <div class="card-actions justify-center">
-                <button class="btn bg-blue-300 w-full ">Donate Now</button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </section>
-      <section class="p-10">
-        <div class="flex flex-col md:flex-row justify-center items-center ">
-          <div class="mx-2 mt-4">
-            <img src="assets/quota-protest.png" alt="">
-
-          </div>
-          <div class="card bg-base-100 w-96 mt-4 md:mt-0 md:ml-4 ">
-            
-            <div class="card-body text-center">
-                <p class="text-blue-500"><span class="bg-blue-200 p-2"><i class="fa-solid fa-dollar-sign text-blue-400 "></i> 5500</span></p>
-              <h2 class="card-title">Donate for Injures, BD</h2>
-              <p>TThe recent Quota movement has resulted in numerous injuries. Your donation will make a huge difference. </p>
-              <input type="text" placeholder="Donation Amount" class="input input-bordered w-full max-w-xs" />
-              <div class="card-actions justify-center">
-                <button class="btn bg-blue-300 w-full ">Donate Now</button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </section>
+      
       <script src="js/implement.js"></script>
    
 </body>
