@@ -20,9 +20,14 @@ function colorSwap(originalBtn, btn, addColor, removeColor){
 function validationFunction(getId, haveId, totalId, titleId){
     let title = document.getElementById(titleId).innerText;
  let getValue = document.getElementById(getId).value.trim();
- if(isNaN(getValue) ||getValue==="" || parseFloat(getValue) <= 0){
-    alert('Enter Valid input (numbers only)');
+ if(isNaN(getValue) ||getValue==="" || parseFloat(getValue) < 0){
+    alert('Enter Valid input');
     return
+    }
+    if(parseFloat(getValue) === 0){
+        alert("0 Dollar? REALLY")
+        return
+
     }
     getValue = parseFloat(getValue);
 
@@ -30,6 +35,8 @@ function validationFunction(getId, haveId, totalId, titleId){
     let totalValue = getOtherValue(totalId);
 
      if (getValue <=totalValue){
+        document.getElementById('my_modal_4').showModal()
+
        
         haveValue+=getValue
         totalValue-=getValue
@@ -39,13 +46,13 @@ function validationFunction(getId, haveId, totalId, titleId){
         historyItem.className="border border-solid border-black p-4 m-4 flex justify-center bg-green-100"
         historyItem.innerHTML=`
             <div>
-                <p class="text-2xl"> ${getValue.toFixed(2)} Taka is Donated for ${title}</p>
+                <p class="text-2xl"> ${getValue.toFixed(2)} Dollar is Donated for ${title}</p>
                 <p class="text-2xl">Date: ${new Date().toLocaleDateString()} at ${new Date().toLocaleTimeString()} (EST)</p>
             </div>
         `
        
     document.getElementById('history-container').append(historyItem)
-   
+    document.getElementById(getId).value = '';
     }
     else{
         alert('Not Enough Money')
@@ -110,7 +117,6 @@ const noakhaliSubmit=getIdByFunction('btn-noa')
 noakhaliSubmit.addEventListener('click', function(){
 
    validationFunction('noaGet', 'noaHave', 'total','noaTitle')
-
    
 })
 

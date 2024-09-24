@@ -81,7 +81,7 @@
             <div class="card bg-base-100 w-96 mt-4 md:mt-0 md:ml-4  ">
               
               <div class="card-body text-center lg:text-left">
-                  <p class="text-green-500"> <i class="fa-solid fa-dollar-sign text-green-300 "></i> <span id="noaHave" class="bg-green-300 p-2 rounded-lg">0.00</span></p>
+                  <p class="text-green-500"> <i class="fa-solid fa-dollar-sign text-green-300  fa-xl"></i> <span id="noaHave" class="bg-green-300 p-2 rounded-lg">0.00</span></p>
                 <h2 class="card-title" id="noaTitle">Donate for Flood at Noakhali, BD</h2>
                 <p>The floods in Noakhali have caused significant damage. Your donation will make a huge difference. </p>
                 <input id="noaGet" type="text" placeholder="Donation Amount" class="input input-bordered w-full max-w-xs" />
@@ -103,7 +103,7 @@
             <div class="card bg-base-100 w-96 mt-4 md:mt-0 md:ml-4 ">
               
               <div class="card-body text-center lg:text-left">
-                <p class="text-green-500"> <i class="fa-solid fa-dollar-sign text-green-300 "></i> <span id="feniHave" class="bg-green-300 p-2 rounded-lg">0.00</span></p>
+                <p class="text-green-500"> <i class="fa-solid fa-dollar-sign text-green-300 fa-xl"></i> <span id="feniHave" class="bg-green-300 p-2 rounded-lg">0.00</span></p>
                 <h2 class="card-title" id="feniTitle">Donate for Flood at Feni, BD</h2>
                 <p>The recent floods in Feni have devastated. Your donation will make a huge difference. </p>
                 <input id="feniGet" type="text" placeholder="Donation Amount" class="input input-bordered w-full max-w-xs" />
@@ -124,7 +124,7 @@
             <div class="card bg-base-100 w-96 mt-4 md:mt-0 md:ml-4 ">
               
               <div class="card-body text-center lg:text-left">
-                <p class="text-green-500"> <i class="fa-solid fa-dollar-sign text-green-300 "></i> <span id="quotaHave" class="bg-green-300 p-2 rounded-lg">0.00</span></p>
+                <p class="text-green-500"> <i class="fa-solid fa-dollar-sign text-green-300 fa-xl"></i> <span id="quotaHave" class="bg-green-300 p-2 rounded-lg">0.00</span></p>
                 <h2 class="card-title" id="quotaTitle">Donate for Injures, BD</h2>
                 <p>TThe recent Quota movement has resulted in numerous injuries. Your donation will make a huge difference. </p>
                 <input type="text" id="quotaGet" placeholder="Donation Amount" class="input input-bordered w-full max-w-xs" />
@@ -157,6 +157,26 @@
         
 
       </section>
+     
+        <!-- You can open the modal using ID.showModal() method -->
+<button class="btn hidden" onclick="my_modal_4.showModal()">open modal</button>
+<dialog id="my_modal_4" class="modal">
+  <div class="modal-box w-3/4 max-w-5xl flex flex-col items-center text-center">
+    <h3 class="text-lg font-bold mb-2">Congrates!</h3>
+    <img src="assets/coin.png" alt="">
+    <p class="py-4">You Have Donated for HumanKind</p>
+    <p class="py-4 font-bold">Successfully</p>
+
+    <div class="modal-action">
+      <form method="dialog">
+        <!-- if there is a button, it will close the modal -->
+        <button class="btn">Close Confirmation</button>
+      </form>
+    </div>
+  </div>
+</dialog>
+    
+      
       
       <script src="js/implement.js"></script>
    
